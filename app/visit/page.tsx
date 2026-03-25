@@ -1,34 +1,52 @@
+import Image from "next/image";
+
 export default function VisitPage() {
   return (
-    <section className="px-[5%] py-20 bg-[#FAF7F2] text-center">
-      
-      <h1 className="text-4xl font-bold text-[#5C1010] mb-6">
-        Visit Redwood Hogs Farm
-      </h1>
+    <div className="bg-gray-100 min-h-screen">
+      <section className="relative h-96">
+        <Image
+          src="/images/farm-gate.jpg" // Placeholder image
+          alt="Redwood Hogs Farm Gate"
+          fill
+          style={{objectFit:"cover"}}
+          className="opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-70"></div>
+        <div className="relative h-full flex items-center justify-center">
+          <h1 className="text-5xl font-extrabold text-white text-center shadow-lg">
+            Visit Us at Redwood Hogs Farm
+          </h1>
+        </div>
+      </section>
 
-      <p className="max-w-xl mx-auto text-gray-600 mb-10">
-        Experience how our pigs are raised with the highest standards of hygiene and care.
-      </p>
-
-      <div className="bg-gradient-to-br from-[#3E0B0B] to-[#5C1010] text-white rounded-2xl p-10 max-w-xl mx-auto shadow-lg">
-        
-        <h2 className="text-2xl font-semibold mb-4">
-          Book a Farm Visit
-        </h2>
-
-        <p className="text-gray-200 mb-6">
-          Contact us to schedule your visit and learn more about our farm operations.
-        </p>
-
-        <a
-          href="https://wa.me/250782767820"
-          target="_blank"
-          className="bg-[#E6B800] px-6 py-3 rounded-lg font-semibold inline-block"
-        >
-          Book via WhatsApp
-        </a>
-
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Location</h2>
+            <p className="text-lg text-gray-600 mb-4">
+              Come and see how we raise our pigs with the highest standards of care and hygiene. We are located at:
+            </p>
+            <address className="text-lg text-gray-800 font-semibold not-italic">
+              Redwood Hogs Farm<br />
+              Kigali, Rwanda
+            </address>
+            <div className="mt-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Operating Hours</h3>
+              <p className="text-lg text-gray-600">
+                <strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM<br />
+                <strong>Saturday:</strong> 10:00 AM - 3:00 PM<br />
+                <strong>Sunday:</strong> Closed
+              </p>
+            </div>
+          </div>
+          <div className="h-96 bg-gray-300 rounded-lg shadow-lg">
+            {/* Placeholder for map */}
+            <div className="flex items-center justify-center h-full text-gray-500">
+              Map Placeholder
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

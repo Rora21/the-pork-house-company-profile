@@ -1,46 +1,54 @@
 export default function ContactPage() {
   return (
-    <section className="px-[5%] py-20 bg-[#FAF7F2]">
-      
-      <h1 className="text-4xl font-bold text-center text-[#5C1010] mb-12">
-        Get In Touch
-      </h1>
+    <div className="bg-gray-100 min-h-screen">
+      <section className="py-24 text-center bg-white">
+        <h1 className="text-5xl font-extrabold text-gray-900">Contact Us</h1>
+        <p className="mt-4 text-xl text-gray-600">We'd love to hear from you. Here's how you can reach us.</p>
+      </section>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+            <form>
+              <div className="mb-4">
+                <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" className="w-full px-4 py-2 border rounded-lg" placeholder="Your Name" />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
+                <input type="email" id="email" name="email" className="w-full px-4 py-2 border rounded-lg" placeholder="Your Email" />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
+                <textarea id="message" name="message" rows={5} className="w-full px-4 py-2 border rounded-lg" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" className="w-full bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors">
+                Send Message
+              </button>
+            </form>
+          </div>
 
-        {/* LEFT */}
-        <div className="bg-gradient-to-br from-[#3E0B0B] to-[#5C1010] text-white p-8 rounded-2xl shadow-lg">
-          
-          <h2 className="text-2xl font-bold mb-4 text-[#E6B800]">
-            Contact Information
-          </h2>
-
-          <p className="mb-3">📍 KK 17 Ave, Kigali</p>
-          <p className="mb-3">📞 0782767820 / 0788523529</p>
-          <p className="mb-6">✉️ sales@theporkhouse.rw</p>
-
-          <a
-            href="https://wa.me/250782767820"
-            target="_blank"
-            className="bg-[#E6B800] px-5 py-3 rounded-lg font-semibold inline-block"
-          >
-            Chat on WhatsApp
-          </a>
-
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Information</h2>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Address:</strong> KK 17 Ave, Kigali, Rwanda
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Phone:</strong> 0782767820 / 0788523529
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Email:</strong> sales@theporkhouse.rw
+            </p>
+            <div className="mt-8 h-64 bg-gray-300 rounded-lg">
+              {/* Placeholder for map */}
+              <div className="flex items-center justify-center h-full text-gray-500">
+                Map Placeholder
+              </div>
+            </div>
+          </div>
         </div>
-
-        {/* RIGHT */}
-        <div className="bg-white text-black p-8 rounded-2xl shadow-md space-y-4">
-          <input className="w-full border p-3 rounded-lg" placeholder="Your Name" />
-          <input className="w-full border text-black p-3 rounded-lg" placeholder="Email" />
-          <textarea className="w-full border text-black p-3 rounded-lg" placeholder="Message"></textarea>
-
-          <button className="w-full bg-[#5C1010] text-white py-3 rounded-lg font-semibold hover:bg-[#3E0B0B]">
-            Send Message
-          </button>
-        </div>
-
       </div>
-    </section>
+    </div>
   );
 }
