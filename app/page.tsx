@@ -36,6 +36,81 @@ export default function Home() {
 
   </div>
 </section>
+{/* import Image from "next/image"; */}
+
+{/* ABOUT */}
+<section className="px-[5%] py-24 bg-gradient-to-br from-[#2B0C0C] via-[#4E1414] to-[#1A0707] text-white relative overflow-hidden">
+
+  {/* Soft glow accents */}
+  <div className="absolute -top-20 left-0 w-[300px] h-[300px] bg-[#D4A373]/10 rounded-full blur-3xl" />
+  <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#D4A373]/10 rounded-full blur-2xl" />
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
+
+    {/* IMAGE SIDE */}
+    <div className="relative h-80 rounded-2xl overflow-hidden group shadow-xl">
+      {/* <Image
+        src="/images/pork-about.jpg"
+        alt="Fresh pork from The Pork House"
+        fill
+        className="object-cover group-hover:scale-105 transition duration-500"
+      /> */}
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* Label */}
+      <div className="absolute bottom-4 left-4 bg-[#D4A373] text-white text-xs px-4 py-1 rounded-full">
+        100% Farm Fresh
+      </div>
+    </div>
+
+    {/* TEXT SIDE */}
+    <div>
+
+      <h2 className="text-4xl font-bold mb-3">
+        About{" "}
+        <span className="text-[#D4A373]">
+          The Pork House
+        </span>
+      </h2>
+
+      <div className="w-16 h-1 bg-[#D4A373] mb-6 rounded" />
+
+      <p className="text-white/80 leading-relaxed mb-5">
+        The Pork House Ltd was created to bring clean, high-quality pork
+        directly from trusted farms to your table. We eliminate the gap
+        between farm and consumer by ensuring freshness, hygiene, and
+        consistency in every product.
+      </p>
+
+      <p className="text-white/80 leading-relaxed mb-8">
+        Whether supplying homes, restaurants, or supermarkets, we are
+        committed to delivering pork you can trust — every single time.
+      </p>
+
+      {/* STATS */}
+      <div className="flex gap-4 flex-wrap">
+        {[
+          { value: "100%", label: "Farm Sourced" },
+          { value: "11+", label: "Products" },
+          { value: "🌍", label: "Growing Vision" },
+        ].map(({ value, label }) => (
+          <div
+            key={label}
+            className="bg-[#3A1010] border border-[#D4A373]/20 px-6 py-4 rounded-xl text-center flex-1 min-w-[120px]"
+          >
+            <div className="text-2xl font-extrabold text-[#D4A373]">
+              {value}
+            </div>
+            <div className="text-xs text-white/70">{label}</div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
     </>
   );
 }
