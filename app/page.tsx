@@ -3,8 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      {/* HERO */}
-      <section className="min-h-[90vh] bg-gradient-to-br from-[#4E1414] via-[#7A1E1E] to-[#2B0C0C] flex items-center px-[5%] relative overflow-hidden">
+     <section className="min-h-[90vh]  bg-gradient-to-br from-[#2B0C0C] via-[#4E1414] to-[#1A0707]flex items-center px-[5%] relative overflow-hidden">
 
   {/* Soft glow */}
   <div className="absolute -top-20 -right-20 w-[400px] h-[400px] bg-[#D4A373]/10 rounded-full blur-3xl" />
@@ -36,7 +35,7 @@ export default function Home() {
 
   </div>
 </section>
-{/* import Image from "next/image"; */}
+      {/* import Image from "next/image"; */}
 
 {/* ABOUT */}
 <section className="px-[5%] py-24 bg-gradient-to-br from-[#2B0C0C] via-[#4E1414] to-[#1A0707] text-white relative overflow-hidden">
