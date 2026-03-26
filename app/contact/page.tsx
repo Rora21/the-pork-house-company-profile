@@ -29,7 +29,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 text-gray-900 min-h-screen">
       <section className="py-24 text-center bg-white">
         <h1 className="text-5xl font-extrabold text-gray-900">Contact Us</h1>
         <p className="mt-4 text-xl text-gray-600">We&apos;d love to hear from you. Here&apos;s how you can reach us.</p>
@@ -53,7 +53,7 @@ export default function ContactPage() {
 
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
+                <label htmlFor="name" className="block text-gray-900 font-bold mb-2">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
+                <label htmlFor="email" className="block text-gray-900 font-bold mb-2">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
+                <label htmlFor="message" className="block text-gray-900 font-bold mb-2">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -106,11 +106,16 @@ export default function ContactPage() {
             <p className="text-lg text-gray-600 mb-4">
               <strong>Email:</strong> sales@theporkhouse.rw
             </p>
-            <div className="mt-8 h-64 bg-gray-300 rounded-lg">
-              <div className="flex items-center justify-center h-full text-gray-500">
-                Map Placeholder
-              </div>
-            </div>
+            <div className="mt-8 h-64 rounded-lg overflow-hidden">
+        <iframe
+          src="https://maps.google.com/maps?q=-1.948214,30.1223702&z=17&output=embed"
+                  width="100%"
+                 height="100%"
+             style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                     ></iframe>
+          </div>
           </div>
         </div>
       </div>
