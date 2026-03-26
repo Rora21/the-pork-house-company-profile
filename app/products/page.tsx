@@ -2,17 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 const products = [
-  { name: "Pork Ribs", price: "6000 RWF", image: "/images/products/ribs.jpg" },
-  { name: "Pork Chops", price: "7000 RWF", image: "/images/products/chops.jpg" },
-  { name: "Pork Tenderloin", price: "7500 RWF", image: "/images/products/tenderloin.jpg" },
-  { name: "Boneless / Iroti", price: "6000 RWF", image: "/images/products/boneless.jpg" },
-  { name: "Imvange", price: "5500 RWF", image: "/images/products/imvange.jpg" },
-  { name: "Fresh Bacon", price: "6500 RWF", image: "/images/products/bacon.jpg" },
-  { name: "Liver", price: "3000 RWF", image: "/images/products/liver.jpg" },
-  { name: "Heart", price: "3000 RWF", image: "/images/products/heart.jpg" },
-  { name: "Lungs", price: "3000 RWF", image: "/images/products/lungs.jpg" },
-  { name: "Intestine", price: "2000 RWF", image: "/images/products/intestine.jpg" },
-  { name: "Skin", price: "2000 RWF", image: "/images/products/skin.jpg" },
+  { name: "Pork Ribs", price: "6000 RWF", image: "/images/pork rib.png" },
+  { name: "Pork Chops", price: "7000 RWF", image: "/images/hero-pork.png" },
+  { name: "Pork Tenderloin", price: "7500 RWF", image: "/images/hero-pork.png" },
+  { name: "Boneless / Iroti", price: "6000 RWF", image: "/images/Iroti boneless.png" },
+  { name: "Imvange", price: "5500 RWF", image: "/images/Invanjye.png" },
+  { name: "Fresh Bacon", price: "6500 RWF", image: "/images/Fresh Bacon.png" },
+  { name: "Liver", price: "3000 RWF", image: "/images/liver.png" },
+  { name: "Heart", price: "3000 RWF", image: "/images/heart.png" },
+  { name: "Lungs", price: "3000 RWF", image: "/images/lungs.png" },
+  { name: "Intestine", price: "2000 RWF", image: "/images/intestine.png" },
+  { name: "Skin", price: "2000 RWF", image: "/images/skin.png" },
 ];
 
 export default function ProductsPage() {

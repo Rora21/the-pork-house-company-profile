@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="bg-gray-50">
       <section className="relative h-96">
         <Image
-          src="/images/farm-banner.jpg" // Placeholder image
+          src="/images/hero-pork.png"
           alt="Redwood Hogs Farm"
           fill
           style={{objectFit:"cover"}}
@@ -47,7 +47,7 @@ export default function AboutPage() {
               </div>
               <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{width: 600, height: 400}}>
                 <Image
-                  src="/images/butcher-shop.jpg" // Placeholder image
+                  src="/images/hero-pork.png"
                   alt="Our Butcher Shop"
                   fill
                   style={{objectFit:"cover"}}

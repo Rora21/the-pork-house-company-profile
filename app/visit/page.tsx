@@ -5,7 +5,7 @@ export default function VisitPage() {
     <div className="bg-gray-100 min-h-screen">
       <section className="relative h-96">
         <Image
-          src="/images/farm-gate.jpg" // Placeholder image
+          src="/images/hero-pork.png"
           alt="Redwood Hogs Farm Gate"
           fill
           style={{objectFit:"cover"}}
