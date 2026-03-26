@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 const links = [
   { href: "/", label: "Home" },
@@ -21,14 +22,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <span className="bg-red-600 text-white font-black text-sm px-2 py-1 rounded tracking-widest group-hover:bg-red-500 transition">
-            TPH
-          </span>
-          <span className="text-white font-bold text-lg tracking-wide group-hover:text-red-400 transition">
+        <Link href="/" className="flex items-center gap-3 group">
+       <Image
+          src="/images/logo1.png"
+              alt="The Pork House Logo"
+               width={45}
+             height={45}
+              className="object-contain"
+             />
+
+        <span className="text-white font-bold text-lg tracking-wide group-hover:text-red-400 transition">
             The Pork House
-          </span>
-        </Link>
+            </span>
+              </Link>
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-1">
