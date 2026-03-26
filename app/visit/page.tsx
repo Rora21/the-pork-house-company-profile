@@ -10,7 +10,7 @@ export default function VisitPage() {
           fill
           sizes="100vw"
           style={{objectFit:"cover"}}
-          className="opacity-40"
+          className="brightness-40 scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-70"></div>
         <div className="relative h-full flex items-center justify-center">
@@ -42,9 +42,16 @@ export default function VisitPage() {
           </div>
           <div className="h-96 bg-gray-300 rounded-lg shadow-lg">
             {/* Placeholder for map */}
-            <div className="flex items-center justify-center h-full text-gray-500">
-              Map Placeholder
-            </div>
+            <div className="mt-8 h-64 rounded-lg overflow-hidden">
+        <iframe
+          src="https://maps.google.com/maps?q=-1.948214,30.1223702&z=17&output=embed"
+                  width="100%"
+                 height="100%"
+             style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                     ></iframe>
+          </div>
           </div>
         </div>
       </div>
