@@ -10,7 +10,7 @@ export default function VisitPage() {
           fill
           sizes="100vw"
           style={{objectFit:"cover"}}
-          className="brightness-40 scale-110"
+          className="brightness-45 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-70"></div>
         <div className="relative h-full flex items-center justify-center">
