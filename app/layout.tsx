@@ -12,8 +12,8 @@ export default function RootLayout({
       <body className="bg-cream text-black">
         <Navbar />
         {children}
+        <Footer />
       </body>
-      <footer />
     </html>
   );
 }
