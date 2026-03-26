@@ -8,6 +8,7 @@ export default function VisitPage() {
           src="/images/hero-pork.png"
           alt="Redwood Hogs Farm Gate"
           fill
+          sizes="100vw"
           style={{objectFit:"cover"}}
           className="opacity-40"
         />

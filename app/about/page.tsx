@@ -8,6 +8,7 @@ export default function AboutPage() {
           src="/images/hero-pork.png"
           alt="Redwood Hogs Farm"
           fill
+          sizes="100vw"
           style={{objectFit:"cover"}}
           className="opacity-40"
         />
@@ -50,6 +51,7 @@ export default function AboutPage() {
                   src="/images/hero-pork.png"
                   alt="Our Butcher Shop"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{objectFit:"cover"}}
                 />
               </div>
