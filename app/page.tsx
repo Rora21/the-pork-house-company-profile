@@ -84,6 +84,7 @@ export default function Home(): JSX.Element {
             alt="Premium Pork"
             fill
             priority
+            sizes="100vw"
             className="object-cover brightness-75 scale-105"
           />
         </div>
@@ -169,7 +170,7 @@ export default function Home(): JSX.Element {
             {featuredProducts.map((product) => (
               <motion.div key={product.name} variants={fadeIn} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
                 <div className="relative h-52">
-                  <Image src={product.image} alt={product.name} fill style={{ objectFit: "cover" }} />
+                  <Image src={product.image} alt={product.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" style={{ objectFit: "cover" }} />
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-bold text-gray-800">{product.name}</h3>
