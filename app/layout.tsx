@@ -9,10 +9,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-cream text-black">
+      <body className="bg-[#F8F6F3] text-gray-900 antialiased">
+
+        {/* NAVBAR */}
         <Navbar />
-        {children}
+
+        {/* MAIN CONTENT */}
+        <main className="min-h-screen">
+          {children}
+        </main>
+
+        {/* FOOTER */}
         <Footer />
+
       </body>
     </html>
   );

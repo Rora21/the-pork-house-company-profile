@@ -35,7 +35,7 @@ export default function ContactPage() {
               <strong>Address:</strong> KK 17 Ave, Kigali, Rwanda
             </p>
             <p className="text-lg text-gray-600 mb-4">
-              <strong>Phone:</strong> 0782767820 / 0788523529
+              <strong>Phone:</strong> 0782767820 / 0788523529a
             </p>
             <p className="text-lg text-gray-600 mb-4">
               <strong>Email:</strong> sales@theporkhouse.rw
